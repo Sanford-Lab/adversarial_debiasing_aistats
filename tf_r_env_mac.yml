@@ -1,0 +1,26 @@
+# macOS / Apple Silicon (and Intel) — conda stack for supplement R + TensorFlow.
+#
+# The pinned tf_r_env.yml in this folder targets Linux + CUDA and will not solve
+# on macOS. Use this file instead:
+#
+#   conda env create -f tf_r_env_mac.yml
+#   conda activate tf_r_env_mac
+#   ./setup_and_test_alpha_conda.sh        # installs CRAN tensorflow + keras3 + smoke test
+#
+# code/debiaser.R uses R package keras3; pair with TensorFlow 2.16+ (Keras 3 on the Python side).
+
+name: tf_r_env_mac
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+  - r-base>=4.3,<4.5
+  - r-tidyverse
+  - r-tidymodels
+  - r-remotes
+  - r-modelsummary
+  - r-matrixcalc
+  - pip:
+    - "tensorflow>=2.16,<2.20"
