@@ -1,5 +1,7 @@
 This folder contains supplemental material for "Adversarial Debiasing for Parameter Recovery", including code used for the experiments.
 
+Paper (OpenReview): https://openreview.net/forum?id=LtLmVk2CAx&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Daistats.org%2FAISTATS%2F2026%2FConference%2FAuthors%23your-submissions)
+
 Code files in `code/`:
 - `code/debiaser.R`: adversarial debiasing model definitions and training helpers used by simulation scripts.
 - `code/progressive_sampling_server.R`: synthetic/continuous-treatment progressive sampling simulation.
